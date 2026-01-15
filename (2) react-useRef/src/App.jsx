@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { RenderCount } from './RenderCount';
-import { WhyDidYouUpdate } from './WhyDidYouUpdate';
+import { RenderCount } from './RenderCount.jsx';
+import { WhyDidYouUpdate } from './WhyDidYouUpdate.jsx';
 import './App.css';
 
 function App() {
