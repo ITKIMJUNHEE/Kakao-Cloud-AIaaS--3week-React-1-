@@ -85,23 +85,23 @@ function App() {
     <div className="app">
       <h1>Teachable Machine Image Model</h1>
 
-      {/* 시작 전에는 버튼을 보여줌 */}
+      {}
       {!isStarted && (
         <button onClick={init} disabled={isLoading} className="start-btn">
           {isLoading ? '모델 로딩 중...' : '시작하기 (Start)'}
         </button>
       )}
 
-      {/* 웹캠이 화면에 나타날 자리 */}
+      {}
       <div ref={webcamContainerRef} className="webcam-box" />
 
-      {/* 분석 결과 리스트 */}
+      {}
       <div className="result-list">
         {predictions.map((pred, index) => (
           <div key={index} className="result-item">
             <span className="label-name">{pred.className}</span>
             <span className="prob-value">{(pred.probability * 100).toFixed(0)}%</span>
-            {/* 시각적인 그래프 (선택사항) */}
+            {}
             <div className="bar-bg">
               <div className="bar-fill" style={{ width: `${pred.probability * 100}%` }}></div>
             </div>
